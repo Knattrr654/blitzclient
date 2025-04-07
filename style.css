@@ -13,14 +13,20 @@ header {
     text-align: center;
     padding: 50px 20px;
     background: url('background-image.jpg') no-repeat center center;
-    background-size: 120px 120px; /* Bildgröße auf 800px Breite und 600px Höhe festlegen */
+    background-size: 90%; /* Hintergrundbild etwas kleiner als Cover */
     color: white;
     position: relative;
+    height: 300px; /* Höhe des Headers anpassen, je nachdem wie du es haben willst */
 }
 
 header h1 {
     font-size: 3em;
     margin-top: 20px;
+}
+
+header .logo img {
+    max-width: 150px; /* Optional: Logo-Größe anpassen */
+    height: auto;
 }
 
 header .cta {
