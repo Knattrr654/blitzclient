@@ -149,3 +149,9 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #444;
 }
+
+#shoplink {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f1f1f;
+}
