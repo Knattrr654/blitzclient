@@ -13,7 +13,7 @@ header {
     text-align: center;
     padding: 50px 20px;
     background: url('background-image.jpg') no-repeat center center;
-    background-size: 20%; /* Skaliert das Bild auf 50% der Container-Größe */
+    background-size: 100px; /* Skaliert das Bild auf 50% der Container-Größe */
     color: white;
     position: relative;
 }
