@@ -1,156 +1,196 @@
-/* Grundlegendes Styling für die Seite */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: white;
-    line-height: 1.6;
+    background-color: #1a1a1a; /* Dunkler Hintergrund */
+    color: #f0f0f0; /* Helle Textfarbe */
 }
 
-/* Header Styling */
 header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #1f1f1f; /* statt Hintergrundbild */
-    color: white;
-    position: relative;
-    height: 300px;
+    background-color: #222;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-top: 20px;
+    margin: 0;
+    color: #ff8c00; /* Orange als Akzentfarbe */
 }
 
 header .logo img {
-    max-width: 150px;
-    height: auto;
+    height: 50px; /* Passe die Höhe nach Bedarf an */
+    margin-left: 1rem;
 }
 
-header .cta {
-    margin-top: 20px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    color: #80cbc4; /* Türkis als weitere Akzentfarbe */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b2ebf2;
+}
+
+main {
+    padding: 2rem;
+}
+
+#hero {
+    background-color: #222;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero-content h2 {
+    color: #ff8c00;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e67a00;
+}
+
+#news h2,
+#download h2,
+#versions h2,
+#shoplink h2,
+#kontakt h2 {
+    color: #80cbc4;
+    margin-bottom: 1.5rem;
+}
+
+.news-item {
+    background-color: #222;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.news-item a {
+    color: #80cbc4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+    color: #b2ebf2;
+}
+
+.download-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Füge etwas Abstand nach den Download-Buttons hinzu */
 }
 
 .download-button {
-    background-color: #28a745;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
+    background-color: #222;
+    padding: 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-button:hover {
-    background-color: #218838;
-}
-
-/* Features Section */
-#features {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #1f1f1f;
+    min-width: 150px;
 }
 
-#features h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+.download-button img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
 }
 
-.feature-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.download-button a {
+    color: #f0f0f0;
+    text-decoration: none;
+    display: block;
 }
 
-.feature {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-}
-
-.feature h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* Screenshots Section */
-#screenshots {
-    padding: 50px 20px;
-    background-color: #121212;
-    text-align: center;
-}
-
-.screenshot-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.screenshot-grid img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-/* Download Section */
-#download {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #1f1f1f;
-}
-
-#download h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-/* Versionen & Features Tabelle Styling */
-#versions {
-    padding: 50px 20px;
-    background-color: #121212;
-    text-align: center;
-}
-
-#versions h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-table {
-    width: 80%;
-    margin: 0 auto;
+#versions table {
+    width: 100%;
     border-collapse: collapse;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    overflow: hidden;
+    margin-top: 1rem;
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden; /* Für abgerundete Ecken */
 }
 
-th, td {
-    padding: 15px;
+#versions th,
+#versions td {
+    padding: 0.8rem;
     text-align: left;
-    color: white;
+    border-bottom: 1px solid #333;
 }
 
-th {
+#versions th {
     background-color: #333;
+    color: #f0f0f0;
 }
 
-tr:nth-child(even) {
-    background-color: #2c2c2c;
+#versions tbody tr:last-child td {
+    border-bottom: none;
 }
 
-tr:hover {
-    background-color: #444;
+#versions tbody a {
+    color: #80cbc4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#versions tbody a:hover {
+    color: #b2ebf2;
 }
 
 #shoplink {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #1f1f1f;
+    margin-top: 2rem;
+}
+
+#kontakt {
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #222;
+    color: #777;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
