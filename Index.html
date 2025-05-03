@@ -2,52 +2,107 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>BlitzClient Beta 0.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blitz Client</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>BlitzClient – Beta 0.2 jetzt verfügbar!</h1>
+        <h1>Blitz Client – Beta 0.2 jetzt verfügbar!</h1>
         <div class="logo">
             <img src="https://www.imghippo.com/i/aCu6687smQ.png" alt="BlitzClient Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#versions">Alle Versionen</a></li>
+                <li><a href="#shoplink">Shop</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="download">
-        <h2>Direkt Download – Beta 0.2</h2>
-        <p>Wähle dein System:</p>
-        <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/windows-x64.exe.zip" class="download-button">Windows (x64)</a><br><br>
-        <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/macos-aarch64.dmg.zip" class="download-button">macOS (ARM64)</a><br><br>
-        <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/minecraft-launcher.jar.zip" class="download-button">.JAR Version</a>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Dein ultimativer Minecraft Client</h2>
+                <p>Erlebe Minecraft wie nie zuvor mit dem Blitz Client!</p>
+                <a href="#download" class="button">Direkt herunterladen (Beta 0.2)</a>
+            </div>
+        </section>
 
-    <section id="versions">
-        <h2>Alle Versionen</h2>
-        <table>
-            <tr>
-                <th>Version</th>
-                <th>Windows (x64)</th>
-                <th>macOS (ARM)</th>
-                <th>JAR</th>
-            </tr>
-            <tr>
-                <td>Beta 0.2</td>
-                <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/windows-x64.exe.zip">Download</a></td>
-                <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/macos-aarch64.dmg.zip">Download</a></td>
-                <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/minecraft-launcher.jar.zip">Download</a></td>
-            </tr>
-            <tr>
-                <td>Beta 0.1</td>
-                <td><a href="/downloads/beta0.1/windows-x64.exe">Download</a></td>
-                <td><a href="/downloads/beta0.1/macos-aarch64.dmg">Download</a></td>
-                <td><a href="/downloads/beta0.1/minecraft-launcher.jar">Download</a></td>
-            </tr>
-        </table>
-    </section>
+        <section id="news">
+            <h2>Neueste Updates</h2>
+            <article class="news-item">
+                <h3>[Datum] Update 1.0.0 veröffentlicht</h3>
+                <p>Wir freuen uns, die erste offizielle Version des Blitz Clients zu präsentieren! Dieses Update beinhaltet [Liste der Features/Änderungen].</p>
+                <a href="#">Mehr lesen</a>
+            </article>
+            </section>
 
-    <section id="shoplink">
-        <h2>Zum Shop</h2>
-        <a href="https://blitzclient.gumroad.com" class="download-button-">Jetzt Shoppen!</a>
-    </section>
+        <section id="download">
+            <h2>Direkt Download – Beta 0.2</h2>
+            <p>Wähle dein System:</p>
+            <div class="download-links">
+                <div class="download-button">
+                    <img src="icons/windows.svg" alt="Windows">
+                    <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/windows-x64.exe.zip">Windows (x64)</a>
+                </div>
+                <div class="download-button">
+                    <img src="icons/mac.svg" alt="macOS">
+                    <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/macos-aarch64.dmg.zip">macOS (ARM64)</a>
+                </div>
+                <div class="download-button">
+                    <img src="icons/jar.svg" alt="JAR">
+                    <a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/minecraft-launcher.jar.zip">.JAR Version</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="versions">
+            <h2>Alle Versionen</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Windows (x64)</th>
+                        <th>macOS (ARM)</th>
+                        <th>JAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beta 0.2</td>
+                        <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/windows-x64.exe.zip">Download</a></td>
+                        <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/macos-aarch64.dmg.zip">Download</a></td>
+                        <td><a href="https://nightly.link/plainprince/BlitzLauncher/actions/runs/14807908611/minecraft-launcher.jar.zip">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Beta 0.1</td>
+                        <td><a href="/downloads/beta0.1/windows-x64.exe">Download</a></td>
+                        <td><a href="/downloads/beta0.1/macos-aarch64.dmg">Download</a></td>
+                        <td><a href="/downloads/beta0.1/minecraft-launcher.jar">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="shoplink">
+            <h2>Zum Shop</h2>
+            <a href="https://blitzclient.gumroad.com" class="button">Jetzt Shoppen!</a>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Du hast Fragen oder Feedback? Kontaktiere uns!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blitz Client</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
