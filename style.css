@@ -12,11 +12,10 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: url('background-image.jpg') no-repeat center center;
-    background-size: 90%; /* Hintergrundbild etwas kleiner als Cover */
+    background-color: #1f1f1f; /* statt Hintergrundbild */
     color: white;
     position: relative;
-    height: 300px; /* Höhe des Headers anpassen, je nachdem wie du es haben willst */
+    height: 300px;
 }
 
 header h1 {
@@ -25,7 +24,7 @@ header h1 {
 }
 
 header .logo img {
-    max-width: 150px; /* Optional: Logo-Größe anpassen */
+    max-width: 150px;
     height: auto;
 }
 
