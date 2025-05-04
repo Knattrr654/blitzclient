@@ -290,3 +290,53 @@ footer {
   font-size: 1rem;
 }
 
+/* Fade-In Animation für den Download-Bereich */
+.download-section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.download-section.fade-in {
+  opacity: 1;
+}
+
+/* Zoom-Effekt für Buttons */
+.zoom {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Animation für den Button bei Hover */
+.download-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Animation beim Klick auf den Download-Link */
+.animate-click {
+  animation: zoomOut 1s forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* Parallax-Effekt */
+header {
+  background-image: url('your-background-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh; /* Header nimmt die ganze Höhe des Bildschirms ein */
+  position: relative;
+  color: white;
+}
+
+header .logo img {
+  position: relative;
+  z-index: 2;
+}
