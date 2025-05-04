@@ -256,4 +256,37 @@ footer {
   background-color: #e67a00;
 }
 
+/* Für die Download-Icons */
+.download-icon {
+  width: 40px; /* Größe der Icons, du kannst sie nach Bedarf anpassen */
+  height: auto;
+  margin-right: 10px; /* Abstand zwischen Icon und Text */
+  vertical-align: middle; /* Vertikale Ausrichtung des Icons */
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #f0f0f0;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-card:hover {
+  background-color: #444;
+}
+
+.download-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.download-card p {
+  margin: 0;
+  font-size: 1rem;
+}
 
