@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fehler 654?!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0e0e0e;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      color: #ff6565;
+      animation: glitch 1s infinite;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+      20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+      40% { text-shadow: 2px 0 red, -2px 0 cyan; }
+      60% { text-shadow: -2px 0 red, 2px 0 cyan; }
+      80% { text-shadow: 2px 0 red, -2px 0 cyan; }
+      100% { text-shadow: -2px 0 red, 2px 0 cyan; }
+    }
+
+    canvas {
+      border: 2px solid #fff;
+      margin-top: 20px;
+      background: #111;
+    }
+
+    button {
+      background: #ff6565;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>654?!</h1>
+  <p>Ups! Diese Seite ist irgendwo zwischen 404 und total verrückt. 🌀</p>
+
+  <canvas id="gameCanvas" width="300" height="150"></canvas>
+  <button onclick="startGame()">Nochmal spielen</button>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = 20, y = 20, dx = 2, dy = 2, radius = 10;
+    let interval;
+
+    function drawBall() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fillStyle = "#ff6565";
+      ctx.fill();
+      ctx.closePath();
+
+      if (x + dx > canvas.width - radius || x + dx < radius) dx = -dx;
+      if (y + dy > canvas.height - radius || y + dy < radius) dy = -dy;
+
+      x += dx;
+      y += dy;
+    }
+
+    function startGame() {
+      x = Math.random() * 100 + 50;
+      y = Math.random() * 50 + 50;
+      dx = (Math.random() < 0.5 ? -1 : 1) * 2;
+      dy = (Math.random() < 0.5 ? -1 : 1) * 2;
+
+      clearInterval(interval);
+      interval = setInterval(drawBall, 16);
+    }
+
+    startGame();
+  </script>
+
+</body>
+</html>
